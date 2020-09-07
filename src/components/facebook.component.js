@@ -16,7 +16,7 @@ export default class Facebook extends Component {
             name : '',
             password : '',
             email : '',
-            result:'',
+            result:true,
         }
     }
     onSubmit = this.onSubmit.bind(this)
@@ -41,6 +41,7 @@ export default class Facebook extends Component {
         if(x.status === 201){
 
         }
+        
     }
     }
 
@@ -62,6 +63,7 @@ export default class Facebook extends Component {
     
 
   render() {
+      
 
     let fbConnect;
     if(this.state.isLoggedIn){
@@ -94,8 +96,14 @@ export default class Facebook extends Component {
             callback={this.responseFacebook} />);
         
     }
-
-    return (
+    if(this.state.result===false){
+        return(
+            <div>
+                <Link to="/"> Please Sign up Again</Link>
+            </div>
+        )
+    }
+    return (    
       <div>
           {fbConnect}
       </div>

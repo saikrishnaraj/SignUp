@@ -77,6 +77,7 @@ export default class Signup extends Component {
           <tbody >
               <tr>
                   <td colspan='2'>
+
                       <b className="smallfont">SIGN UP</b>
                   </td>
               </tr>
@@ -95,7 +96,10 @@ export default class Signup extends Component {
                   <tr>
                       
                           <td>
+                    <Link to="/facebook">
                       <Facebook />
+
+                      </Link>
                       </td>
                         <td>
                       <button className="buttonclass">
