@@ -1,0 +1,87 @@
+
+  @mixin box-shadow($x-axis: 0, $y-axis: 0px, $blur: 2px, $color: $default) {
+    box-shadow: $x-axis $y-axis $blur $color;
+  }
+
+nav {
+    overflow: hidden;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    @include box-shadow(5px,5px,5px,rgb(156, 153, 153))
+}
+
+table{
+    margin:auto;
+}
+.tableclass{
+    margin: auto;
+  table-layout : fixed;
+  border: 2px solid black;
+  padding: 10px;
+}
+td{
+    text-align:center
+}
+.bigfont{
+    font-size: 30px;
+}
+.smallfont{
+    font-size:12px;
+}
+
+.buttonclass{
+    background-color: white;
+  padding : 5px 20px;
+  cursor: pointer;
+  border: 2px solid #e7e7e7;
+  border-radius : 3px;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .container{
+    padding-top:50px;
+    margin: auto;
+  }
+
+  
+img{
+    padding:10px 10px;
+}
+.formgroup{
+    padding:4px;
+    input{
+        border-radius : 3px;
+        width :  65%;
+        padding:4px;
+        
+        }
+    
+
+}
+
+.signinbutbutton{
+    background-color: #008CBA;
+  border: none;
+  color: white;
+  padding:10px 30px;
+  width:60%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.links{
+    color:#008CBA;
+}
