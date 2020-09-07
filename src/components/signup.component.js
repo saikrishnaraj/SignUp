@@ -47,6 +47,11 @@ export default class Signup extends Component {
                 result : 'You have succesfully registered'
             });
         }
+        else if (x.status === 400){
+            this.setState({
+                result : 'Server Error'
+            });
+        }
 
        
     }
